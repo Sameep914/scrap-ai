@@ -1,0 +1,7 @@
+factor,lead_months,n,correlation,loo_corr_min,loo_corr_median,loo_corr_max,status
+ldt,1,28,0.1911646797562191,0.13698109048196047,0.18943517723286896,0.29649406421529007,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"
+ldt,2,27,-0.07088868097998742,-0.12600270235062636,-0.07642304210078671,0.041283327054094696,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"
+ldt,3,26,-0.1217188116429003,-0.17518067625089961,-0.1205671378114869,-0.03228862685719984,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"
+ships,1,28,0.07704488463480254,-0.07656775865661532,0.07791273335738197,0.2776454492207994,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"
+ships,2,27,-0.07387392830043109,-0.2068560505489819,-0.07388829855420237,-0.010652184119843904,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"
+ships,3,26,0.015196834163158998,-0.08836201376929381,0.015226033746769558,0.13733651841514669,"CONTEXT ONLY - current-vintage series, unknown historical release timestamps"

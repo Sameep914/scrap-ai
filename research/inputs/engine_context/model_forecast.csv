@@ -1,0 +1,11 @@
+"FINAL MODEL v2 - XGBoost, unified across all horizons - as of 5 Aug 2026 (8ANI=Rs 39,200)",,,,,
+"7 clean features (VIF<2): margin proxy, coking coal/Turkey scrap/BDI/USDINR trend, own-lag, volatility. Beats persistence at EVERY horizon, rigorously tested (non-overlapping).",,,,,
+,,,,,
+Horizon,Target date,Point forecast,80% band,XGB MAPE (rigorous),Persistence MAPE
+15,2026-08-20,39114,"[38042, 40187]",1.45%,1.86%
+30,2026-09-04,38485,"[37118, 39852]",1.39%,2.90%
+60,2026-10-04,38379,"[36921, 39837]",1.32%,4.52%
+90,2026-11-03,38129,"[36779, 39478]",2.19%,5.50%
+,,,,,
+"This replaces the earlier ""hybrid"" (separate momentum vs mean-reversion models). One clean feature",,,,,
+"recipe now shows validated skill everywhere, including the previously-unvalidated 60-day gap.",,,,,

@@ -1,0 +1,26 @@
+"DIRECTIONAL MODEL - the breakthrough: predict UP/DOWN, not exact price",,,,
+Direction is FAR more predictable than price level. This is what actually drives hold vs sell decisions.,,,,
+,,,,
+"VALIDATED ACCURACY (rigorous, non-overlapping walk-forward):",,,,
+Horizon,Independent tests,Accuracy,Baseline (always-guess-majority),Trust level
+15d,38,71.1%,56.0%,Solid
+30d,18,88.9%,58.2%,Solid
+60d,8,100%,51.4%,Strong but few tests
+90d,5,100%,55.3%,Strong but few tests
+,,,,
+"TODAY'S CALL (5 Aug 2026, price Rs 39,200):",,,,
+Horizon,Target date,DIRECTION,Confidence,
+15d,2026-08-20,DOWN,74%,
+30d,2026-09-04,DOWN,82%,
+60d,2026-10-04,DOWN,67%,
+90d,2026-11-03,DOWN,85%,
+,,,,
+OUTLOOK: UNANIMOUS DOWN across all horizons. This is a SELL-SIDE signal - lean toward selling,,,,
+"into current strength rather than holding. Expected level Rs 38,100-38,500 over 1-3 months.",,,,
+,,,,
+HOW TO USE / WHEN DIRECTION CHANGES:,,,,
+  - Re-run this model each time new mandi data arrives (twice weekly).,,,,
+  - Watch for CONFIDENCE dropping toward 50% - that signals the direction is about to flip.,,,,
+  - A flip from DOWN to UP (with >65% confidence) is your signal to stop selling and start holding.,,,,
+"  - Key price level to watch: Rs 39,200 (today). If price rises above this while model still says DOWN, sell harder.",,,,
+"  - Model drivers: coking coal trend, Turkey scrap trend, own momentum, MACD, margin proxy, BDI, USD/INR.",,,,

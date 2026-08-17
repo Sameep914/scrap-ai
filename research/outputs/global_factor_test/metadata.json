@@ -1,0 +1,17 @@
+{
+  "seed": 20260989,
+  "bootstrap_reps": 2000,
+  "ridge_alpha_fixed": 10.0,
+  "monthly_rule": "one native month observation, available only after month-end; no daily forward-fill",
+  "weekly_rule": "one native weekly observation; no daily interpolation",
+  "daily_rule": "source close becomes eligible only for a strictly later Mandi date",
+  "feature_rules": {
+    "monthly_prices": "one-native-period log change normalized by elapsed months",
+    "weekly_hrc": "four-week log change requiring exactly 28 elapsed days",
+    "daily_prices": "10-calendar-day log change, max four-day lag tolerance",
+    "supply": "log level; descriptive only because historical release timestamps are unknown"
+  },
+  "oos": "purged expanding ridge, fixed alpha, candidate plate-melt plus factor vs same-origin plate-melt only",
+  "multiple_testing": "maximum studentized centered moving-block bootstrap over every estimable factor-horizon incremental MAE test",
+  "current_snapshot_supply": "not tested: one snapshot cannot identify a historical forecast relationship"
+}

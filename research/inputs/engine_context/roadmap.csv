@@ -1,0 +1,26 @@
+"SBIP MODEL-BUILDING ROADMAP - the disciplined pipeline, stage by stage",,,
+Each stage has a clear gate. Do not skip ahead until the gate is passed for a factor/horizon.,,,
+,,,
+Stage,Name,What happens,Gate to move to next stage
+STAGE 1,COLLECT,"Daily Snapshot Log grows by 1 real row every day (Turkey scrap, China HRC, BDI, iron ore, coking coal, LME CFR India, USD/INR, ingot/billet once tracked). No forward-fill, no approximation - only real observed values.",GATE: at least 60 real daily observations per factor before testing it (roughly 3 months). Testing earlier = same leakage/overfitting risk we already found twice.
+STAGE 2,TEST INDIVIDUALLY,"For EACH factor separately: does it correlate with 8ANI's future move, at 15/30/60/90-day horizons? Use the factor's own trend/change as the input, 8ANI's forward change as the target.","GATE: correlation must be statistically significant (p<0.05) AND survive PURGED validation (drop training rows whose target window overlaps the test window) - not just raw correlation, which we've shown can look real and vanish under purging."
+STAGE 3,BACKTEST DIRECTION + LEAD TIME,"For factors that pass Stage 2: build a simple direction classifier (up/down) using ONLY that factor. Test at every horizon (5,10,15,20,30,45,60,90 days) to find exactly how many days in advance it has real predictive power, not just whether it does.","GATE: report accuracy AND number of independent (non-overlapping) test points at the winning horizon. A factor 'passes' only if accuracy is real at a horizon with at least ~15-20 independent tests - fewer than that is not trustworthy, as we found with 60-90d single-combo results earlier."
+STAGE 4,MULTI-FACTOR COMBINATION,"Only using factors that passed Stage 3: test combinations (pairs, triples) - NOT the full kitchen sink. Use the two-stage search framework already built (cheap Ridge ranking -> rigorous tree-model validation) so combinations are judged by DISTRIBUTION of results, not the single best (overfitting guard).","GATE: VIF must be under 5 for all factors in the winning combination (checked explicitly - this is the exact mistake made early in this project, VIF up to 630). Reject any combination that fails this even if it scores well."
+STAGE 5,FINAL MODEL + HONEST BANDS,"Build the final model on the surviving factor combination. Bands come from the ACTUAL calibration-tested error distribution (checked to really cover 80%/50% as claimed - we already proved tight bands fail this test), not assumed.","GATE: re-run calibration test before trusting any band. If band coverage is off, widen it - do not report a number known to be wrong."
+STAGE 6,MONITOR & RE-TEST,"Every 2-4 weeks: re-run Stage 2-4 as new data arrives. Track whether the SAME factors keep winning (real signal) or the winners keep changing (overfitting/noise). Re-baseline if a policy shock or regime change occurs (e.g. new scrap policy, safeguard duty change).","GATE: none - this stage runs forever, it is the maintenance loop."
+,,,
+CURRENT STATUS (9 Aug 2026) - where each factor sits in this pipeline:,,,
+Factor,Stage reached,Notes,
+8ANI own-price technicals,"Stage 2 - FAILED (no edge, tested clean)","Random-walk-like, confirmed by ADF test",
+USD/INR (real daily),"Stage 2 - FAILED (no edge, tested clean)","680 real days, purged validation, no horizon works",
+China HRC (real weekly),"Stage 2 - FAILED (no edge, tested clean)","147 real weeks, purged, no significant lead-lag",
+USD/INR + China HRC + own momentum combined,Stage 4 - FAILED (no edge),"Tested together, all horizons, still no signal",
+Turkey scrap (Kallanish weekly),Stage 1 - COLLECTING,"31 real weeks (2026), need ~60+ before Stage 2 test",
+Ingot/Billet (Ayron Mart),Stage 1 - COLLECTING (2 days only),"Highest-priority factor - real mechanism confirmed via news, but far from Stage 1 gate",
+"BDI, Iron Ore, Coking Coal",Stage 1 - COLLECTING (3-4 days),"Via Daily Snapshot Log, need ~60 days",
+"Policy events (GST, safeguard duty, etc.)",Not yet tested,Too few events (16) for statistical test - stays qualitative context,
+India crude steel production,Stage 1 - COLLECTING (6 real months),"worldsteel.org, free official, continue monthly",
+Brent crude oil,Stage 1 - COLLECTING (8 real points),"Highly volatile this year - promising, easy to get daily going forward",
+China Manufacturing PMI (RatingDog),Stage 1 - COLLECTING (5 real months),"Free monthly, watch for name-change confusion (was Caixin pre-2025)",
+India IIP - Construction Goods,Stage 1 - COLLECTING (1 real month),MOSPI free official. Use YoY% not level - index was rebased,
+Diesel price (Bhavnagar),Stage 1 - COLLECTING (2 real points),Free daily source found - rozkabhav.com. Easy to add to Daily Snapshot Log going forward,

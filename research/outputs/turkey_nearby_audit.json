@@ -1,0 +1,495 @@
+{
+  "rows": 873,
+  "first": "2023-01-12",
+  "last": "2026-08-11",
+  "contracts": 43,
+  "rolls": 42,
+  "zero_volume_rate": 0.8934707903780069,
+  "zero_oi_rate": 0.027491408934707903,
+  "zero_range_rate": 0.8831615120274914,
+  "return_std_nonroll": 0.005784619027351738,
+  "return_std_roll": 0.03165937484324429,
+  "largest_abs_returns": [
+    {
+      "date": "2023-02-23",
+      "Symbol": "IS7H23",
+      "Latest": 470.0,
+      "ret": 0.09594868147547952,
+      "Volume": 0.0,
+      "Open Int": 0.0,
+      "roll": true
+    },
+    {
+      "date": "2023-04-24",
+      "Symbol": "IS7K23",
+      "Latest": 400.0,
+      "ret": -0.0746435429957657,
+      "Volume": 0.0,
+      "Open Int": 25.0,
+      "roll": true
+    },
+    {
+      "date": "2025-04-28",
+      "Symbol": "IS7K25",
+      "Latest": 335.0,
+      "ret": -0.05798725765034973,
+      "Volume": 0.0,
+      "Open Int": 68.0,
+      "roll": true
+    },
+    {
+      "date": "2024-02-23",
+      "Symbol": "IS7H24",
+      "Latest": 395.0,
+      "ret": -0.05659566762363433,
+      "Volume": 6.0,
+      "Open Int": 57.0,
+      "roll": true
+    },
+    {
+      "date": "2023-11-27",
+      "Symbol": "IS7Z23",
+      "Latest": 401.0,
+      "ret": 0.056425222224143035,
+      "Volume": 0.0,
+      "Open Int": 89.0,
+      "roll": true
+    },
+    {
+      "date": "2026-06-26",
+      "Symbol": "IS7N26",
+      "Latest": 383.0,
+      "ret": -0.04342955792733605,
+      "Volume": 0.0,
+      "Open Int": 19.0,
+      "roll": true
+    },
+    {
+      "date": "2026-07-27",
+      "Symbol": "IS7Q26",
+      "Latest": 387.0,
+      "ret": 0.03953083875663577,
+      "Volume": 0.0,
+      "Open Int": 53.0,
+      "roll": true
+    },
+    {
+      "date": "2026-03-27",
+      "Symbol": "IS7J26",
+      "Latest": 399.0,
+      "ret": 0.038318864302136824,
+      "Volume": 5.0,
+      "Open Int": 35.0,
+      "roll": true
+    },
+    {
+      "date": "2023-03-27",
+      "Symbol": "IS7J23",
+      "Latest": 440.0,
+      "ret": -0.03571808260207998,
+      "Volume": 0.0,
+      "Open Int": 17.0,
+      "roll": true
+    },
+    {
+      "date": "2023-08-28",
+      "Symbol": "IS7U23",
+      "Latest": 375.0,
+      "ret": 0.035281814144639156,
+      "Volume": 0.0,
+      "Open Int": 55.0,
+      "roll": true
+    },
+    {
+      "date": "2023-05-26",
+      "Symbol": "IS7M23",
+      "Latest": 365.0,
+      "ret": -0.03499684203709652,
+      "Volume": 16.0,
+      "Open Int": 62.0,
+      "roll": true
+    },
+    {
+      "date": "2023-05-05",
+      "Symbol": "IS7K23",
+      "Latest": 375.0,
+      "ret": -0.034079313652862986,
+      "Volume": 0.0,
+      "Open Int": 34.0,
+      "roll": false
+    },
+    {
+      "date": "2023-12-04",
+      "Symbol": "IS7Z23",
+      "Latest": 419.0,
+      "ret": 0.03398385281559868,
+      "Volume": 0.0,
+      "Open Int": 83.0,
+      "roll": false
+    },
+    {
+      "date": "2024-09-30",
+      "Symbol": "IS7V24",
+      "Latest": 387.0,
+      "ret": 0.03149866705937132,
+      "Volume": 0.0,
+      "Open Int": 120.0,
+      "roll": false
+    },
+    {
+      "date": "2024-12-03",
+      "Symbol": "IS7Z24",
+      "Latest": 344.0,
+      "ret": -0.03147613210201783,
+      "Volume": 0.0,
+      "Open Int": 97.0,
+      "roll": false
+    }
+  ],
+  "roll_table": [
+    {
+      "date": "2023-01-12",
+      "Symbol": "IS7F23",
+      "Latest": 411.0,
+      "Volume": 0.0,
+      "Open Int": 0.0,
+      "ret": NaN
+    },
+    {
+      "date": "2023-01-26",
+      "Symbol": "IS7G23",
+      "Latest": 410.0,
+      "Volume": 0.0,
+      "Open Int": 0.0,
+      "ret": -0.004866189651172803
+    },
+    {
+      "date": "2023-02-23",
+      "Symbol": "IS7H23",
+      "Latest": 470.0,
+      "Volume": 0.0,
+      "Open Int": 0.0,
+      "ret": 0.09594868147547952
+    },
+    {
+      "date": "2023-03-27",
+      "Symbol": "IS7J23",
+      "Latest": 440.0,
+      "Volume": 0.0,
+      "Open Int": 17.0,
+      "ret": -0.03571808260207998
+    },
+    {
+      "date": "2023-04-24",
+      "Symbol": "IS7K23",
+      "Latest": 400.0,
+      "Volume": 0.0,
+      "Open Int": 25.0,
+      "ret": -0.0746435429957657
+    },
+    {
+      "date": "2023-05-26",
+      "Symbol": "IS7M23",
+      "Latest": 365.0,
+      "Volume": 16.0,
+      "Open Int": 62.0,
+      "ret": -0.03499684203709652
+    },
+    {
+      "date": "2023-06-26",
+      "Symbol": "IS7N23",
+      "Latest": 380.0,
+      "Volume": 0.0,
+      "Open Int": 55.0,
+      "ret": -0.01566611674439944
+    },
+    {
+      "date": "2023-07-26",
+      "Symbol": "IS7Q23",
+      "Latest": 363.0,
+      "Volume": 0.0,
+      "Open Int": 49.0,
+      "ret": -0.01368010390408081
+    },
+    {
+      "date": "2023-08-28",
+      "Symbol": "IS7U23",
+      "Latest": 375.0,
+      "Volume": 0.0,
+      "Open Int": 55.0,
+      "ret": 0.035281814144639156
+    },
+    {
+      "date": "2023-09-25",
+      "Symbol": "IS7V23",
+      "Latest": 375.0,
+      "Volume": 3.0,
+      "Open Int": 43.0,
+      "ret": 0.0
+    },
+    {
+      "date": "2023-10-26",
+      "Symbol": "IS7X23",
+      "Latest": 357.0,
+      "Volume": 3.0,
+      "Open Int": 94.0,
+      "ret": -0.019418085857101808
+    },
+    {
+      "date": "2023-11-27",
+      "Symbol": "IS7Z23",
+      "Latest": 401.0,
+      "Volume": 0.0,
+      "Open Int": 89.0,
+      "ret": 0.056425222224143035
+    },
+    {
+      "date": "2023-12-26",
+      "Symbol": "IS7F24",
+      "Latest": 419.0,
+      "Volume": 0.0,
+      "Open Int": 80.0,
+      "ret": -0.00713439411387462
+    },
+    {
+      "date": "2024-01-26",
+      "Symbol": "IS7G24",
+      "Latest": 413.0,
+      "Volume": 0.0,
+      "Open Int": 78.0,
+      "ret": -0.021557721074978886
+    },
+    {
+      "date": "2024-02-23",
+      "Symbol": "IS7H24",
+      "Latest": 395.0,
+      "Volume": 6.0,
+      "Open Int": 57.0,
+      "ret": -0.05659566762363433
+    },
+    {
+      "date": "2024-03-22",
+      "Symbol": "IS7J24",
+      "Latest": 385.0,
+      "Volume": 0.0,
+      "Open Int": 33.0,
+      "ret": 0.013072081567353067
+    },
+    {
+      "date": "2024-04-25",
+      "Symbol": "IS7K24",
+      "Latest": 386.0,
+      "Volume": 0.0,
+      "Open Int": 12.0,
+      "ret": 0.002594035177046372
+    },
+    {
+      "date": "2024-05-28",
+      "Symbol": "IS7M24",
+      "Latest": 385.0,
+      "Volume": 0.0,
+      "Open Int": 9.0,
+      "ret": 0.0
+    },
+    {
+      "date": "2024-06-21",
+      "Symbol": "IS7N24",
+      "Latest": 382.0,
+      "Volume": 9.0,
+      "Open Int": 15.0,
+      "ret": -0.013004084423206663
+    },
+    {
+      "date": "2024-07-26",
+      "Symbol": "IS7U24",
+      "Latest": 380.0,
+      "Volume": 0.0,
+      "Open Int": 12.0,
+      "ret": -0.02853630726493428
+    },
+    {
+      "date": "2024-09-25",
+      "Symbol": "IS7V24",
+      "Latest": 370.0,
+      "Volume": 120.0,
+      "Open Int": 120.0,
+      "ret": 0.016349138001529262
+    },
+    {
+      "date": "2024-10-28",
+      "Symbol": "IS7X24",
+      "Latest": 372.0,
+      "Volume": 0.0,
+      "Open Int": 117.0,
+      "ret": -0.018642350809280117
+    },
+    {
+      "date": "2024-11-22",
+      "Symbol": "IS7Z24",
+      "Latest": 353.0,
+      "Volume": 3.0,
+      "Open Int": 107.0,
+      "ret": -0.019635974516859278
+    },
+    {
+      "date": "2024-12-30",
+      "Symbol": "IS7F25",
+      "Latest": 354.0,
+      "Volume": 0.0,
+      "Open Int": 30.0,
+      "ret": 0.022858138076049528
+    },
+    {
+      "date": "2025-01-27",
+      "Symbol": "IS7G25",
+      "Latest": 349.0,
+      "Volume": 0.0,
+      "Open Int": 87.0,
+      "ret": 0.014430264829028872
+    },
+    {
+      "date": "2025-02-24",
+      "Symbol": "IS7H25",
+      "Latest": 364.0,
+      "Volume": 0.0,
+      "Open Int": 77.0,
+      "ret": 0.019418085857101808
+    },
+    {
+      "date": "2025-03-27",
+      "Symbol": "IS7J25",
+      "Latest": 378.0,
+      "Volume": 1.0,
+      "Open Int": 73.0,
+      "ret": 0.010638398205055744
+    },
+    {
+      "date": "2025-04-28",
+      "Symbol": "IS7K25",
+      "Latest": 335.0,
+      "Volume": 0.0,
+      "Open Int": 68.0,
+      "ret": -0.05798725765034973
+    },
+    {
+      "date": "2025-05-23",
+      "Symbol": "IS7M25",
+      "Latest": 342.0,
+      "Volume": 7.0,
+      "Open Int": 51.0,
+      "ret": 0.0029282597790878384
+    },
+    {
+      "date": "2025-06-26",
+      "Symbol": "IS7N25",
+      "Latest": 338.0,
+      "Volume": 0.0,
+      "Open Int": 49.0,
+      "ret": -0.008836581800498067
+    },
+    {
+      "date": "2025-07-28",
+      "Symbol": "IS7Q25",
+      "Latest": 353.0,
+      "Volume": 0.0,
+      "Open Int": 39.0,
+      "ret": 0.020029281875571847
+    },
+    {
+      "date": "2025-08-25",
+      "Symbol": "IS7U25",
+      "Latest": 355.0,
+      "Volume": 0.0,
+      "Open Int": 50.0,
+      "ret": 0.02567901441769127
+    },
+    {
+      "date": "2025-09-25",
+      "Symbol": "IS7V25",
+      "Latest": 343.0,
+      "Volume": 12.0,
+      "Open Int": 48.0,
+      "ret": 0.01173033978548954
+    },
+    {
+      "date": "2025-10-27",
+      "Symbol": "IS7X25",
+      "Latest": 350.0,
+      "Volume": 0.0,
+      "Open Int": 21.0,
+      "ret": 0.002861232281031967
+    },
+    {
+      "date": "2025-11-24",
+      "Symbol": "IS7Z25",
+      "Latest": 363.0,
+      "Volume": 11.0,
+      "Open Int": 30.0,
+      "ret": 0.022285044789434494
+    },
+    {
+      "date": "2025-12-29",
+      "Symbol": "IS7F26",
+      "Latest": 363.0,
+      "Volume": 0.0,
+      "Open Int": 45.0,
+      "ret": -0.01368010390408081
+    },
+    {
+      "date": "2026-01-23",
+      "Symbol": "IS7G26",
+      "Latest": 379.0,
+      "Volume": 3.0,
+      "Open Int": 42.0,
+      "ret": 0.015957785438610372
+    },
+    {
+      "date": "2026-02-23",
+      "Symbol": "IS7H26",
+      "Latest": 381.0,
+      "Volume": 0.0,
+      "Open Int": 36.0,
+      "ret": 0.0026281224062696396
+    },
+    {
+      "date": "2026-03-27",
+      "Symbol": "IS7J26",
+      "Latest": 399.0,
+      "Volume": 5.0,
+      "Open Int": 35.0,
+      "ret": 0.038318864302136824
+    },
+    {
+      "date": "2026-04-27",
+      "Symbol": "IS7K26",
+      "Latest": 407.0,
+      "Volume": 0.0,
+      "Open Int": 28.0,
+      "ret": 0.009876623495912007
+    },
+    {
+      "date": "2026-05-26",
+      "Symbol": "IS7M26",
+      "Latest": 400.0,
+      "Volume": 0.0,
+      "Open Int": 16.0,
+      "ret": -0.029558802241544946
+    },
+    {
+      "date": "2026-06-26",
+      "Symbol": "IS7N26",
+      "Latest": 383.0,
+      "Volume": 0.0,
+      "Open Int": 19.0,
+      "ret": -0.04342955792733605
+    },
+    {
+      "date": "2026-07-27",
+      "Symbol": "IS7Q26",
+      "Latest": 387.0,
+      "Volume": 0.0,
+      "Open Int": 53.0,
+      "ret": 0.03953083875663577
+    }
+  ]
+}

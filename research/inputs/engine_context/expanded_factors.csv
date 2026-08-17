@@ -1,0 +1,16 @@
+EXPANDED FACTOR LIBRARY - new candidates not yet in the Daily Snapshot Log,,,,
+Ranked by priority. Each needs its own Stage 1 collection before testing (per ROADMAP).,,,,
+,,,,
+Priority,Factor,Why it might matter,Source,Frequency
+HIGH,India crude steel production (monthly),Direct demand signal - more production = more scrap/billet consumption,"JPC/worldsteel, free official",Monthly
+HIGH,Vehicle Scrappage/ELV supply data,"Competing domestic scrap supply channel - already flagged, real mechanism confirmed","MoRTH/SIAM, free",Monthly
+HIGH,India construction/infrastructure IIP sub-index,Proxy for real steel demand from the buyer side (mills sell into construction),"MOSPI, free official",Monthly
+HIGH,Diesel/fuel price (Gujarat),Affects trucking cost Alang-to-buyer AND ship-breaking demolition cost directly,"IOCL/PPAC, free daily",Daily
+MEDIUM,Brent crude oil,Drives bunker fuel cost -> ship trading economics -> scrapping decisions (same mechanism as BDI but more direct),Free live via search/TradingView,Daily
+MEDIUM,China Caixin Manufacturing PMI,Leading demand signal from largest global steel producer/consumer,"Free, monthly release",Monthly
+MEDIUM,India crude steel capacity utilization,Tells us if mills are running hot (more scrap demand) or slack,JPC bulletin,Monthly
+MEDIUM,GMB / Alang plot utilization rate,Direct supply-side capacity signal specific to Alang (not just ship count),GMB annual report (patchy) or news spot-checks,Irregular
+MEDIUM,Vietnam HRC export price,Vietnam flagged as a dumping-source in the 2025 safeguard duty saga - may lead Indian finished-steel price,Search-based spot-check (Kallanish/GMK style),As available
+LOW,India WPI construction materials index,Broader input-cost inflation context,"MOSPI, free official",Monthly
+LOW,Actual IMD rainfall data (not just monsoon dummy),"Measures DEGREE of monsoon disruption, not just presence","IMD, free official",Daily during monsoon
+LOW,India SME credit conditions / repo transmission,Re-rollers need working capital to buy scrap - credit tightness could suppress demand,RBI bulletins,Monthly

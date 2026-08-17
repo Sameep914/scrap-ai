@@ -1,0 +1,29 @@
+{
+  "method": "Pre-specified causal threshold rules; true calendar targets; strict prior-date external joins; moving-block bootstrap; all phase-offset non-overlap cohorts; common circular-shift max-null across 35 rule/horizon candidates.",
+  "horizons": [
+    5,
+    10,
+    15,
+    30,
+    45,
+    60,
+    90
+  ],
+  "target_tolerance_days": 4,
+  "mandi_rows": 606,
+  "main_continuous_start": "2024-09-18",
+  "large_gaps_days": [
+    87,
+    96
+  ],
+  "turkey_roll_count": 42,
+  "multiple_testing": {
+    "candidate_count": 49,
+    "replicates": 1500,
+    "observed_max_standardized_edge": 2.546767810412451,
+    "expected_best_under_shift_null": 1.353914865795729,
+    "null_95": 2.249369430787826,
+    "selection_adjusted_p": 0.022651565622918056,
+    "survives_5pct_familywise_gate": true
+  }
+}

@@ -1,0 +1,70 @@
+"NEW FACTOR DATA - collected 9-10 Aug 2026, per EXPANDED FACTORS list",,
+,,
+"INDIA CRUDE STEEL PRODUCTION (worldsteel.org, free official monthly press releases)",,
+Month,Production (Mt),YoY change
+2025-12,14.8,+10.1%
+2026-01,15.1,+10.5%
+2026-02,13.6,+7.7%
+2026-03,15.3,+9.4%
+2026-04,13.8,+3.9%
+2026-06,14.1,+4.5%
+"Source: worldsteel.org monthly press releases. Continue collecting each month - free, reliable, official.",,
+,,
+BRENT CRUDE OIL (proxy for shipping/bunker economics -> ship-scrapping decisions),,
+Date,Price ($/bbl),Note
+2025-12-16,58.66,52-week low
+2026-01-31,70.69,
+2026-02-19,71.66,6-month high at the time
+2026-04-30,120.88,52-week HIGH - Iran/Strait of Hormuz conflict escalation
+2026-08-03,87.38,
+2026-08-06,83.64,
+2026-08-07,83.49,
+2026-08-10,84.27,"Current - Iran-Oman Hormuz talks broke down, risk premium re-priced in"
+"MASSIVE volatility this year (58.66 to 120.88, +106% swing) driven by Iran/Strait of Hormuz conflict.",,
+This directly affects bunker fuel cost -> ship trading economics -> scrapping decisions. Genuinely promising factor.,,
+,,
+"CHINA MANUFACTURING PMI (RatingDog, ex-Caixin - renamed mid-2025, S&P Global still compiles it)",,
+Month,PMI,Note
+2026-03,50.8,
+2026-04,52.2,Over 5-year high
+2026-05,51.8,
+2026-06,51.7,"3-month low, but strongest quarter since late 2020"
+2026-07,50.9,"Missed forecast, growth cooling"
+,,
+"INDIA IIP - INFRASTRUCTURE/CONSTRUCTION GOODS (MOSPI, free official, monthly)",,
+Month,Index value,YoY growth
+2026-06,132.9,+7.5%
+NOTE: index appears rebased vs 2025 series (2025-06 shown as 198.3 elsewhere) - do NOT compare levels,,
+across years directly without checking base year. Use YoY growth rate as the safe comparable metric.,,
+,,
+"DIESEL PRICE - BHAVNAGAR, GUJARAT (direct trucking + demolition cost driver, real daily source)",,
+Date,Price (Rs/litre),Note
+2026-07-13,99.52,Bhavnagar specific
+2026-08-06,97.92,Gujarat state average
+"Free daily source: rozkabhav.com/fuel-price-in-bhavnagar-gujarat - updates every midnight, official IOCL/BPCL/HPCL data.",,
+,,
+"IRON ORE - DAILY INTERVAL chart read (TradingView TIO1!, real daily candles, not monthly approximation)",,
+Approx date,Price ($/t),Note
+2026-06-05,105,Early June
+2026-06-19,103,
+2026-06-30,102,
+2026-07-10,101,
+2026-07-20,100,
+2026-07-27,99,
+2026-08-01,98,
+2026-08-05,95,Sharp drop
+2026-08-09,94.45,"Current, matches live quote"
+"Read from real daily-interval chart (not monthly) - genuine ~10% decline over 2 months, June-August 2026.",,
+"NOTE: zoom tool became unstable mid-session (CDP timeout) - readings are from the full-resolution screenshot,",,
+"approximate but real daily data, denser than the earlier monthly-only series.",,
+,,
+"IRON ORE - REFINED daily-interval read (browser recovered, zoom confirmed working then failed on reuse - known pattern now)",,
+2026-06-05,102,
+2026-06-19,101,
+2026-07-03,98,
+2026-07-17,99.5,Local hump
+2026-07-27,98.5,
+2026-08-05,95,Sharp drop begins
+2026-08-09,94.45,"Current, live-confirmed"
+"TOOLING NOTE for future sessions: browser zoom tool works reliably on FIRST call after fresh navigation/interaction,",,
+then times out on immediate reuse. Workaround: navigate/re-click between zoom calls rather than zooming repeatedly.,,

@@ -1,0 +1,9 @@
+# Reproducible dependencies and local caches
+node_modules/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Redundant hand-off archive; its source data is tracked in the repository.
+claude_independent_raw_inputs.zip
+*.zip

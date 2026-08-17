@@ -1,0 +1,2 @@
+effective_date,payment_basis,loading_charge_inr_per_mt,credit_charge_inr_per_mt_per_day,sale_close_india_time,source,notes
+2026-06-29,next-day payment,50,30,10:30,User-provided SRIA WhatsApp reference-rate message,"Operational hurdle extracted from the user's Alang chat archive; confirm whether these terms still apply before deployment"

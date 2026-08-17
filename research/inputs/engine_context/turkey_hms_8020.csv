@@ -1,0 +1,93 @@
+Turkey CFR HMS 80:20 — Daily Futures Settle ($/t),,,
+"STATUS: partial - only 13 days from is7u26 contract (Sep-26 expiry, just started trading). Need re-export from CONTINUOUS contract IS7*0 while logged into Barchart.",,,
+,,,
+Date,Contract,Settle ($/t),
+2026-07-21,IS7U26 (Sep-26),384,
+2026-07-22,IS7U26 (Sep-26),390,
+2026-08-03,IS7U26 (Sep-26),383,
+2026-08-04,IS7U26 (Sep-26),383,
+2026-08-05,IS7U26 (Sep-26),382,
+,,,
+"Derived anchor points from TradingView SC1! period-return stats (6 Aug 2026 snapshot, $373.50/t)",,,
+Date (approx),Contract,Implied price ($/t),Basis
+2026-08-05,SC1! (continuous),375,back-calculated from stated 1-day return (-0.40%)
+2026-07-31,SC1! (continuous),377.01,back-calculated from stated 5-day return (-0.93%)
+2026-07-06,SC1! (continuous),375.98,back-calculated from stated 1-month return (-0.66%)
+2026-01-01,SC1! (continuous),364.5,back-calculated from stated YTD return (+2.47%)
+2025-08-06,SC1! (continuous),349.49,back-calculated from stated 1-year return (+6.87%)
+,,,"Note: these are back-calculated from TradingView's displayed period returns, not raw daily quotes - treat as directional anchors, not precise history."
+,,,
+"SC1! (Turkey SCRAP) CONFIRMED DEAD END - chart genuinely has no renderable data on TradingView (checked directly in browser, logged in). Contract is real but essentially unquoted/illiquid.",,,
+,,,
+"BREAKTHROUGH: SC1! chart data IS real - earlier ""dead end"" was a canvas rendering bug in automated screenshots, fixed by triggering TradingView's own Download-image export (reads canvas pixel data directly). Values below read visually off the resulting real chart, weekly resolution, Nov 2024 - Sep 2026.",,,
+Date (approx),Contract,Price ($/t),Note
+2024-11,SC1!,373,Starting level
+2024-12,SC1!,325,Decline
+2025-01,SC1!,335,
+2025-02,SC1!,337,
+2025-03,SC1!,365,Rally
+2025-04,SC1!,310,Sharp drop - aligns with US tariff/India safeguard duty shock (21 Apr 2025)
+2025-05,SC1!,335,Recovery from low
+2025-06,SC1!,340,
+2025-07,SC1!,335,
+2025-08,SC1!,345,
+2025-09,SC1!,350,
+2025-10,SC1!,360,
+2025-11,SC1!,365,Aligns with safeguard duty lapse (~7 Nov 2025) - modest effect visible
+2025-12,SC1!,378,
+2026-01,SC1!,385,
+2026-02,SC1!,405,Strong rally - aligns with confirmed safeguard duty extension (JPC Jan 2026 bulletin) + US-India trade deal (2 Feb 2026)
+2026-03,SC1!,418,"Peak zone, high wick to ~422"
+2026-04,SC1!,415,
+2026-05,SC1!,405,
+2026-06,SC1!,400,Pullback begins
+2026-07,SC1!,375,Sharp decline
+2026-08,SC1!,378,"Current, matches live spot ($373.50-378)"
+,,,
+"Backfill Dec 2023 - Oct 2024, read from same real chart (monthly view, 2016-2027) - connects to Nov 2024 anchor above",,,
+2023-12,SC1!,370,Matches mandi master start date (11 Dec 2023) - good anchor
+2024-01,SC1!,368,
+2024-02,SC1!,365,
+2024-03,SC1!,362,
+2024-04,SC1!,355,Decline
+2024-05,SC1!,340,Sharp drop - falls inside the known mandi data-gap window (20 Mar-13 Jun 2024)
+2024-06,SC1!,335,Low point
+2024-07,SC1!,338,
+2024-08,SC1!,340,
+2024-09,SC1!,345,
+2024-10,SC1!,355,"Recovery beginning, connects to Nov-2024 anchor (373) already recorded"
+,,,
+"REAL WEEKLY DATA - GMK Center / Kallanish chart (user-provided, 9 Aug 2026) - genuinely free, recurring monthly source",,,
+"GMK Center publishes this chart monthly (gmk.center/en/tag/scrap-metal) - Turkey CFR HMS 1&2 80:20, weekly, sourced from Kallanish.",,,
+Date,Turkey CFR HMS 80:20 ($/t),,
+2026-01-02,368,,
+2026-01-09,369,,
+2026-01-16,370,,
+2026-01-23,371,,
+2026-01-30,373,,
+2026-02-06,368,,
+2026-02-13,367,,
+2026-02-20,367,,
+2026-02-27,367,,
+2026-03-06,367,,
+2026-03-13,367,,
+2026-03-20,380,,
+2026-03-27,386,,
+2026-04-03,389,,
+2026-04-10,393,,
+2026-04-17,396,,
+2026-04-24,398,,
+2026-05-01,400,,
+2026-05-08,404,,
+2026-05-15,405,,
+2026-05-22,400,,
+2026-05-29,398,,
+2026-06-05,397,,
+2026-06-12,390,,
+2026-06-19,384,,
+2026-06-26,377,,
+2026-07-03,370,,
+2026-07-10,368,,
+2026-07-17,369,,
+2026-07-24,369,,
+2026-07-31,370,,

@@ -1,0 +1,28 @@
+Ship Breaking Intelligence — Engine Data Master
+Single workbook for all engine input data. Every new data drop updates a sheet here — never re-collate from scratch.
+
+SHEETS IN THIS WORKBOOK
+"  Mandi Master     — daily Alang rates, 11 sources, 576 trading days (Dec 2023 - Jul 2026). COMPLETE."
+"  Summary          — stats + 8ANI benchmark chart, auto-computed from Mandi Master."
+"  QC Log           — every typo/disagreement/inversion caught during parsing, with source."
+"  USD-INR          — DONE (monthly avg, Dec 2023-Jul 2026). Source: exchangerates.org.uk."
+  Turkey HMS 8020   — daily/weekly Turkey CFR HMS 80:20 futures settle. STILL NEEDED (see open requests).
+
+OPEN DATA REQUESTS (highlighted orange on their sheets)
+  1. USD-INR: paste the JSON/CSV from this URL (browser or Excel Get-Data-from-Web):
+     https://api.frankfurter.dev/v1/2023-12-11..2026-07-06?base=USD&symbols=INR
+"     Free, no login. Alternative: RBI reference rate archive (rbi.org.in / fbil.org.in)."
+"  2. Turkey HMS 80/20 CFR Turkey futures: needs a Barchart account (free tier = 2 yrs daily,"
+     CSV download). Export Price History for symbol IS7 (continuous) or nearest active contract
+     and drop the CSV back. Barchart Premier needed for history before ~2 years ago.
+
+HOW TO ADD NEW DATA GOING FORWARD
+  - New WhatsApp mandi export -> re-run parse_mandi.py -> paste new rows into Mandi Master
+"    (script auto-dedupes/QCs; never overwrite existing rows, only append new dates)."
+"  - USD-INR / Turkey HMS: paste new rows at the bottom of their respective sheet, same columns."
+  - This README + Summary should be updated whenever a new exogenous series is added.
+
+  Policy Events    — researched customs/GST/IMO event dates for use as model dummies (see sheet). GMB fee dates still open.
+
+"  Supply & Substitutes - ship arrivals, Baltic Dry Index, JPC billet/pig iron/sponge iron, Nhava Sheva import parity."
+"                          Spot data points via search, refresh periodically (same pattern as BigMint cross-checks)."

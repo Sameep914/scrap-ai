@@ -1,0 +1,16 @@
+{
+  "nearby_rows": 873,
+  "fixed_contract_files": 44,
+  "fixed_contract_symbols": 44,
+  "fixed_contract_rows": 5697,
+  "nearby_exact_fixed_matches": 873,
+  "nearby_rows_without_exact_fixed_price": 0,
+  "rolls": 42,
+  "rolls_with_same_contract_return": 41,
+  "rolls_with_prior_date_basis": 41,
+  "max_abs_roll_identity_error": 2.636779683484747e-16,
+  "adjusted_return_nonmissing": 871,
+  "mom10_nonmissing": 853,
+  "mom20_nonmissing": 833,
+  "method": "At each nearby date use the selected fixed contract's own close-to-close log return. On a symbol switch this exactly removes the incoming/outgoing basis measured on the previous shared close while preserving the incoming contract's market move."
+}

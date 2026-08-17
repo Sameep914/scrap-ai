@@ -1,0 +1,35 @@
+{
+  "mandi_rows": 606,
+  "mandi_first": "2023-12-11",
+  "mandi_last": "2026-08-11",
+  "large_gaps_days": [
+    87,
+    96
+  ],
+  "continuous_segment_rows": 533,
+  "turkey_rows": 282,
+  "turkey_first": "2025-07-02",
+  "turkey_last": "2026-08-11",
+  "turkey_zero_volume_rate": 0.6773049645390071,
+  "turkey_zero_oi_rows": 71,
+  "strict_prior_matches": 318,
+  "strict_prior_under_4d": 316,
+  "primary_quality_rows": 72,
+  "target_counts": {
+    "5": 590,
+    "10": 586,
+    "15": 576,
+    "30": 550,
+    "45": 526,
+    "60": 503,
+    "90": 468
+  },
+  "search_adjustment": {
+    "candidate_count": 28,
+    "observed_best_skill_log": 0.009988238840704974,
+    "expected_best_null_skill_log": 0.02389389744998708,
+    "null_95_skill_log": 0.03281643669012961,
+    "selection_adjusted_p": 1.0,
+    "deflated_skill_log": -0.022828197849424636
+  }
+}

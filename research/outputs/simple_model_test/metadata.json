@@ -1,0 +1,117 @@
+{
+  "models": {
+    "plate_melt_z": [
+      "plate_melt_z60"
+    ],
+    "own_momentum": [
+      "own_mom_10d"
+    ],
+    "local_ingot_tmt": [
+      "local_ingot_mom10",
+      "local_tmt_mom10"
+    ],
+    "turkey_momentum": [
+      "turkey_mom10"
+    ],
+    "plate_melt_local": [
+      "plate_melt_z60",
+      "local_ingot_mom10",
+      "local_tmt_mom10"
+    ],
+    "plate_melt_turkey": [
+      "plate_melt_z60",
+      "turkey_mom10"
+    ]
+  },
+  "horizons_calendar_days": [
+    5,
+    10,
+    15,
+    30,
+    45,
+    60,
+    90
+  ],
+  "target_tolerance_days": 4,
+  "strict_prior_external_joins": true,
+  "same_origins_within_horizon": true,
+  "purge": "target_end strictly before origin",
+  "walk_forward": "expanding",
+  "oos_origin_spacing_days": 7,
+  "magnitude_baseline": "zero change",
+  "direction_baseline": "expanding Laplace-smoothed class frequency",
+  "bootstrap_reps": 2000,
+  "max_null_reps": 2000,
+  "candidate_count": 42,
+  "origin_counts": {
+    "5": 67,
+    "10": 67,
+    "15": 64,
+    "30": 60,
+    "45": 57,
+    "60": 52,
+    "90": 45
+  },
+  "data_audit": {
+    "mandi": {
+      "rows": 606,
+      "first": "2023-12-11",
+      "last": "2026-08-11",
+      "large_gaps_over_14d": [
+        87,
+        96
+      ],
+      "segments": 3
+    },
+    "turkey": {
+      "rows": 873,
+      "first": "2023-01-12",
+      "last": "2026-08-11",
+      "contracts": 43,
+      "rolls": 42,
+      "duplicate_dates_removed": 0,
+      "zero_volume_rate": 0.8934707903780069,
+      "zero_oi_rate": 0.027491408934707903,
+      "zero_range_rate": 0.8831615120274914,
+      "roll_adjusted_return_missing": 1,
+      "roll_change_vs_raw_diff_max_abs": 0.0,
+      "roll_return_formula": "selected incoming fixed contract's own close-to-close return on switches; this removes the prior shared-close contract basis and preserves the market move"
+    },
+    "bhavnagar": {
+      "rows_with_all_prices": 581,
+      "first": "2023-01-02",
+      "last": "2026-08-10",
+      "excel_epoch": "1899-12-30",
+      "raw_nonmissing": {
+        "tmt": 572,
+        "ingot": 577,
+        "billet": 577
+      }
+    },
+    "joins": {
+      "strict_prior_turkey_matches": 606,
+      "turkey_under_4d_and_positive_oi": 598,
+      "strict_prior_local_matches": 606,
+      "local_under_4d": 565,
+      "common_feature_quality_rows": 444,
+      "max_turkey_date_violation": 0,
+      "max_local_date_violation": 0
+    }
+  },
+  "mae_max_null": {
+    "metric": "mae_skill_zero",
+    "candidate_count": 42,
+    "replications": 2000,
+    "null_95_max_studentized": 2.9448481997250266,
+    "null_95_max_raw_skill": 0.019792827785353365,
+    "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+  },
+  "brier_max_null": {
+    "metric": "brier_skill_frequency",
+    "candidate_count": 42,
+    "replications": 2000,
+    "null_95_max_studentized": 2.8107885361906693,
+    "null_95_max_raw_skill": 0.17646880919667118,
+    "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+  }
+}

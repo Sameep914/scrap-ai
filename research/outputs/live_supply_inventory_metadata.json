@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-08-11",
+  "source_snapshot": "alangtoday_demolition_current_20260812T100336Z.csv",
+  "government_yield_midpoints": {
+    "general_cargo": 0.63,
+    "bulker": 0.66,
+    "tanker": 0.765,
+    "container": 0.65,
+    "special_structure_assumption": 0.35,
+    "other_assumption": 0.6
+  },
+  "release_kernel": "Gamma shape 3; theta 30 and 45-day sensitivities; mode 60 and 90 days",
+  "warning": "The 70-row public table is a current-state snapshot, not a complete arrivals archive. Yield and kernel values are scenario priors. These numbers contextualize the live 45-90 day supply risk and are not validated forecasts."
+}

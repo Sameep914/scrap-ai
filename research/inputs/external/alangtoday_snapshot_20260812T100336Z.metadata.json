@@ -1,0 +1,38 @@
+﻿{
+    "snapshot_id":  "20260812T100336Z",
+    "acquired_at_utc":  "2026-08-12T10:03:35Z",
+    "authentication_used":  false,
+    "sources":  [
+                    {
+                        "url":  "https://www.alangtoday.com/all-demolition.aspx",
+                        "dataset":  "Current India recycling table",
+                        "captured_rows":  70,
+                        "captured_pages":  3,
+                        "scope":  "Current-state snapshot rendered by the site; not a confirmed longitudinal event archive"
+                    },
+                    {
+                        "url":  "https://www.alangtoday.com/alang-analysis.aspx",
+                        "dataset":  "Monthly LDT beached and number of ships beached",
+                        "year_selector_confirmed":  "2016-2026",
+                        "captured_rows":  132,
+                        "scope":  "Historical monthly values as rendered at acquisition; original release timestamps and revision history are unavailable"
+                    }
+                ],
+    "files":  [
+                  {
+                      "path":  "research/inputs/external/alangtoday_demolition_current_20260812T100336Z.csv",
+                      "sha256":  "d1198df2e5dd45d5c7a4e15b77a69bf273d44fdbba05b615009f7b4429bf1102"
+                  },
+                  {
+                      "path":  "research/inputs/external/alangtoday_monthly_beachings_2016_2026_asof_20260812T100336Z.csv",
+                      "sha256":  "cf5c34f5ef5b87c5c94c5bbd636810d6c50570cb12d0c67cd11c65e1ad48b037"
+                  }
+              ],
+    "caveats":  [
+                    "The demolition table reports 70 records at acquisition, including beaching dates from 2020 through 2026. It is a current-state table, not proof of a complete historical arrivals census.",
+                    "The monthly analysis history for 2016-2026 was confirmed through the public unauthenticated year selector, but past values may be revised and no point-in-time release archive was found.",
+                    "August 2026 is partial at acquisition; September-December 2026 zeros are future placeholders and must not be modeled as observations.",
+                    "AlangToday states that it takes no legal responsibility for the accuracy or completeness of its data.",
+                    "The site does not specify a unit for propeller shaft diameter on the public table; the field is retained only as source text."
+                ]
+}

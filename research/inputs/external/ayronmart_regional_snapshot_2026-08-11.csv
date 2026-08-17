@@ -1,0 +1,12 @@
+observation_date,accessed_at,location,state,product,price_inr_per_mt_ex_gst,daily_change_inr,source_url,notes
+2026-08-11,2026-08-12T15:30:00+05:30,Mandi Gobindgarh,Punjab,Ingot,42000,0,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Ahmedabad,Gujarat,Ingot,40200,0,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Bhavnagar,Gujarat,Ingot,40300,0,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Mumbai,Maharashtra,Ingot,40600,0,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Mandi Gobindgarh,Punjab,Billet,42150,50,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Ahmedabad,Gujarat,Billet,41200,200,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Bhavnagar,Gujarat,Billet,41000,200,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:30:00+05:30,Mumbai,Maharashtra,Billet,41300,100,https://ayronmart.com/semi-finished-steel-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:35:00+05:30,Mandi Gobindgarh,Punjab,TMT 12mm,46700,-200,https://ayronmart.com/tmt-steel-bar-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:35:00+05:30,Bhavnagar,Gujarat,TMT 12mm,47500,0,https://ayronmart.com/tmt-steel-bar-prices/,Visible authenticated market table; informational quote
+2026-08-11,2026-08-12T15:35:00+05:30,Mumbai,Maharashtra,TMT 12mm,46600,100,https://ayronmart.com/tmt-steel-bar-prices/,Visible authenticated market table; informational quote

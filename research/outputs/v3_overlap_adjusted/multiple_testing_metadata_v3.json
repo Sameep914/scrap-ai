@@ -1,0 +1,18 @@
+{
+  "mae": {
+    "metric": "mae_skill_zero",
+    "candidate_count": 35,
+    "replications": 600,
+    "null_95_max_studentized": 2.747534946627608,
+    "null_95_max_raw_skill": 0.028091621528074654,
+    "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+  },
+  "brier": {
+    "metric": "brier_skill_frequency",
+    "candidate_count": 35,
+    "replications": 600,
+    "null_95_max_studentized": 2.757656845636344,
+    "null_95_max_raw_skill": 0.225238650378604,
+    "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+  }
+}

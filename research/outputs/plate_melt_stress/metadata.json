@@ -1,0 +1,27 @@
+{
+  "data_start": "2023-12-11",
+  "data_end": "2026-08-11",
+  "rows": 606,
+  "gap_rule_days": 7,
+  "excluded_gap_starts": [
+    "2023-12-23",
+    "2024-06-14",
+    "2024-09-18",
+    "2026-06-15"
+  ],
+  "target_tolerance_days": 4,
+  "signal_side": "positive z only => DOWN",
+  "live": {
+    "z40": 1.0198873384042717,
+    "z60": 1.398273215010349,
+    "z90": 1.7945962072609338,
+    "price": 38500.0
+  },
+  "multiplicity": {
+    "reps": 3000,
+    "candidate_count": 63,
+    "null_max_95": 2.7430351798143837,
+    "observed_max_t": 2.90083070746683,
+    "family_p": 0.04165278240586471
+  }
+}

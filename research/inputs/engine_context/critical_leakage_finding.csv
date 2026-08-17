@@ -1,0 +1,24 @@
+CRITICAL FINDING - PRIOR RESULTS WERE INFLATED BY DATA LEAKAGE,,,
+"Samip's scepticism (""hard to believe price goes down in every case"") was CORRECT. Model was broken.",,,
+,,,
+Horizon,Reported acc,TRUE acc (purged),Inflation
+10d,71.3%,52.2%,+19.1
+15d,69.0%,46.9%,+22.1
+30d,81.3%,57.0%,+24.3
+60d,87.4%,47.4%,+40.0
+90d,92.9%,51.8%,+41.2
+,,,
+ROOT CAUSE:,,,
+"  - Exogenous features (Turkey scrap, coking coal, BDI, USD/INR) are MONTHLY, forward-filled to daily.",,,
+  - For ~30 consecutive days those features are IDENTICAL numbers.,,,
+  - Training rows from the same month share the test row's exact features AND have overlapping targets.,,,
+"  - Model recognises a pattern it already knows the answer to = memorisation, not forecasting.",,,
+  - PURGED test (drop training rows whose target overlaps test target) removes this -> skill vanishes.,,,
+"  - This likely also inflated earlier MAPE results (1.19%, 2.8%) - same root cause.",,,
+,,,
+THE FIX (already in motion):,,,
+  - The DAILY SNAPSHOT LOG is now the highest-value asset in this project.,,,
+  - It collects TRUE daily values (not forward-filled monthly) for all exogenous factors.,,,
+"  - Once it has a few months of real daily data, re-run these models WITHOUT the structural leakage.",,,
+  - ALWAYS use purged walk-forward validation going forward - never the naive version.,,,
+  - Until then: treat ALL prior model forecasts and directional calls as UNVALIDATED.,,,

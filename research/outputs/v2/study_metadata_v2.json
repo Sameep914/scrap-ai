@@ -1,0 +1,208 @@
+{
+  "study": "8ANI leakage-safe forecast study v2",
+  "seed": 20260812,
+  "horizons_calendar_days": [
+    5,
+    10,
+    15,
+    30,
+    45,
+    60,
+    90
+  ],
+  "target_definition": "first 8ANI quote on/after origin+H, accepted only through origin+H+4 calendar days",
+  "primary_magnitude_baseline": "zero log-return / random walk",
+  "secondary_magnitude_baseline": "expanding trailing-120-label median",
+  "direction_baselines": "expanding Laplace-smoothed down/flat/up frequencies and expanding majority class",
+  "purge_rule": "training target_end must be strictly before forecast origin_date",
+  "asof_rule": "Turkey and Bhavnagar observations must be strictly before the mandi forecast date; the documented 10:30 India sale cutoff precedes typical same-day Ayron/mandi updates.",
+  "same_origin_rule": "all six models use the exact common-feature-quality forecast origins within each horizon",
+  "model_features": {
+    "baseline": [],
+    "internal": [
+      "plate_melt_z60",
+      "own_mom_10d",
+      "ewma_vol",
+      "unchanged_20"
+    ],
+    "local": [
+      "plate_melt_z60",
+      "own_mom_10d",
+      "ewma_vol",
+      "unchanged_20",
+      "local_ingot_mom10",
+      "local_tmt_mom10",
+      "scrap_ingot_z60"
+    ],
+    "turkey": [
+      "plate_melt_z60",
+      "own_mom_10d",
+      "ewma_vol",
+      "unchanged_20",
+      "turkey_mom5",
+      "turkey_mom10",
+      "turkey_rv10"
+    ],
+    "combined": [
+      "plate_melt_z60",
+      "own_mom_10d",
+      "ewma_vol",
+      "unchanged_20",
+      "local_ingot_mom10",
+      "local_tmt_mom10",
+      "scrap_ingot_z60",
+      "turkey_mom5",
+      "turkey_mom10",
+      "turkey_rv10"
+    ],
+    "nonlinear": [
+      "plate_melt_z60",
+      "own_mom_10d",
+      "ewma_vol",
+      "unchanged_20",
+      "local_ingot_mom10",
+      "local_tmt_mom10",
+      "scrap_ingot_z60",
+      "turkey_mom5",
+      "turkey_mom10",
+      "turkey_rv10"
+    ]
+  },
+  "nonlinear_terms": [
+    "positive/negative standardized plate_melt_z60 hinges beyond +/-1",
+    "positive/negative standardized scrap_ingot_z60 hinges beyond +/-1",
+    "clipped standardized turkey_mom10 x local_ingot_mom10 interaction"
+  ],
+  "alpha_grid_nested": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "min_raw_train": 80,
+  "oos_origin_spacing_days": 7,
+  "bootstrap_reps": 600,
+  "max_null_reps": 600,
+  "max_null": {
+    "mae": {
+      "metric": "mae_skill_zero",
+      "candidate_count": 35,
+      "replications": 600,
+      "null_95_max_studentized": 2.5690624324814095,
+      "null_95_max_raw_skill": 0.01876296144804243,
+      "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+    },
+    "brier": {
+      "metric": "brier_skill_frequency",
+      "candidate_count": 35,
+      "replications": 600,
+      "null_95_max_studentized": 2.7297598716904647,
+      "null_95_max_raw_skill": 0.24576621023461703,
+      "method": "Joint within-horizon circular moving-block bootstrap of centered OOS loss differentials; maximum studentized statistic across 5 pre-specified models x 7 horizons."
+    },
+    "scope_note": "Adjustment covers the declared 5 non-baseline models x 7 horizons. It uses final OOS loss differentials and does not rerun the full fitting pipeline inside every null replicate."
+  },
+  "input_hashes_sha256": {
+    "mandi_master.csv": "b38ddaa604f781f42311ce8ba29b62aff6ae3da0421df6a941007398592cc36e",
+    "turkey_scrap_daily_nearby.csv": "dcb6769ab7f921693042eb56be77c0b2848bc8940f793c0b5c9c7b2244655c5f",
+    "bhavnagar_Bhavnagar_Prices.csv": "44874a60220331b269d0322e82bd50efdfde8bb377628b28e4b3bf609c322690"
+  },
+  "data_audit": {
+    "mandi": {
+      "rows": 606,
+      "first": "2023-12-11",
+      "last": "2026-08-11",
+      "large_gaps_over_14d": [
+        87,
+        96
+      ],
+      "segments": 3
+    },
+    "turkey": {
+      "rows": 873,
+      "first": "2023-01-12",
+      "last": "2026-08-11",
+      "contracts": 43,
+      "rolls": 42,
+      "duplicate_dates_removed": 0,
+      "zero_volume_rate": 0.8934707903780069,
+      "zero_oi_rate": 0.027491408934707903,
+      "zero_range_rate": 0.8831615120274914,
+      "roll_change_missing": 0,
+      "roll_change_vs_raw_diff_max_abs": 0.0,
+      "roll_return_formula": "missing on Symbol changes; within-Symbol log(Latest_t / Latest_t-1) otherwise. Change is retained only for the audit because it equals the cross-contract gap on rolls."
+    },
+    "bhavnagar": {
+      "rows_with_all_prices": 581,
+      "first": "2023-01-02",
+      "last": "2026-08-10",
+      "excel_epoch": "1899-12-30",
+      "raw_nonmissing": {
+        "tmt": 572,
+        "ingot": 577,
+        "billet": 577
+      }
+    },
+    "joins": {
+      "strict_prior_turkey_matches": 606,
+      "turkey_under_4d_and_positive_oi": 598,
+      "strict_prior_local_matches": 606,
+      "local_under_4d": 565,
+      "common_feature_quality_rows": 225,
+      "max_turkey_date_violation": 0,
+      "max_local_date_violation": 0
+    }
+  },
+  "target_raw_counts": {
+    "5": 590,
+    "10": 586,
+    "15": 576,
+    "30": 550,
+    "45": 526,
+    "60": 503,
+    "90": 468
+  },
+  "target_greedy_nonoverlap_counts": {
+    "5": 142,
+    "10": 74,
+    "15": 50,
+    "30": 25,
+    "45": 17,
+    "60": 12,
+    "90": 9
+  },
+  "common_oos_origin_counts": {
+    "5": 31,
+    "10": 31,
+    "15": 30,
+    "30": 27,
+    "45": 27,
+    "60": 22,
+    "90": 19
+  },
+  "assertions_passed": [
+    "strict prior-date Turkey joins",
+    "strict prior-date Bhavnagar joins",
+    "calendar target tolerance",
+    "purged training outcomes",
+    "identical model origins within each horizon"
+  ],
+  "no_call_gates": [
+    "independent OOS N >= 20",
+    "moving-block MAE skill CI lower bound > 0",
+    "max-null adjusted one-sided p <= 0.10",
+    "at least 60% of usable phase-offset cohorts have positive skill",
+    "no negative time-third skill",
+    "live external data pass strict age/quality checks",
+    "class confidence >= 0.50",
+    "HOLD requires the 80% lower interval and UP class to clear provisional credit cost Rs30/MT/day x horizon",
+    "SELL requires the 80% upper interval and DOWN class to clear one Rs100 quote increment"
+  ],
+  "limitations": [
+    "Mandi history contains 87- and 96-day gaps; rolling internal features reset after gaps over 14 days.",
+    "Turkey nearby series is mostly zero-volume and often zero-range; open interest and staleness are audited, not proof of executable liquidity.",
+    "Bhavnagar and Turkey same-day values are deliberately withheld, which is conservative when publication timestamps are unknown.",
+    "Long-horizon labels overlap heavily; raw forecast counts are not independent sample sizes.",
+    "Residual intervals are training-residual intervals, not fully conformal guarantees.",
+    "Holding hurdle uses the current 29-Jun-2026 SRIA term of Rs30/MT/day and is provisional; loading is separately shown at Rs50/MT."
+  ]
+}

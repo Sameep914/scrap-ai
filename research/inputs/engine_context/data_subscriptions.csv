@@ -1,0 +1,39 @@
+"DATA SUBSCRIPTIONS - what to buy, what it costs, what it fixes",,,,
+"Ranked by value-per-rupee for THIS model. Prices as of Aug 2026, verify before buying.",,,,
+,,,,
+Priority,Source,Cost,What it gives,Which problem it solves
+1 - BUY FIRST,TradingView Plus,"$29.95/mo or $299.40/yr (~Rs 26,000/yr). Sales 40-80% off around Black Friday/Easter - Premium seen at $215 once.","CHART DATA EXPORT (CSV of daily OHLCV) for: Turkey scrap SC1!, China HRC HC1!, BDI, iron ore TIO1!, coking coal ACF1!, Turkey rebar SR1!. All in one subscription.",THE core problem: replaces our monthly chart-read approximations with real daily data. This is what makes the model testable at all.
+2 - BUY (cheap),Ayron Mart,Rs 300/year,"Daily ingot + billet prices, ~20 Indian cities, with direction arrows. Historical data + their own forecasts.",Tests YOUR hypothesis (ingot prices lead Alang). Currently untested - we have only 2 days. Highest-value untested idea in the project.
+3 - EVALUATE,BigMint / SteelMint,Not public. Contact +91 97700 56666 or demo request. Website tiers: Silver/Gold/Platinum/Platinum+. API + Excel plugin available (likely Platinum+).,"Daily professional Alang HMS 80:20 assessment (Mon-Fri, 13:00/17:00 IST) + API access.","Independent validation of our WhatsApp-parsed series (2 free spot-checks already matched within Rs 0-100), plus a clean daily feed."
+4 - PROBABLY SKIP,MEPS International,"Per-table subscription, single-user licence. Not public.","Steel prices/indices, 3 yrs history included. MONTHLY updates only.",Monthly resolution = same leakage problem we already have. Does NOT fix our core issue.
+5 - ENTERPRISE,Kallanish Commodities,Not public - enterprise quote,"Daily Turkey scrap assessment (their analyst does the Turkey daily scrap assessment), ferrous prices.",Would give authoritative daily Turkey scrap. Likely expensive vs TradingView for same series.
+6 - ENTERPRISE,SteelOrbis,Not public - subscription tiers,"Steel prices, indices, daily reports, historical prices, charts.",Alternative to Kallanish. Same trade-off.
+7 - ENTERPRISE,Fastmarkets / Argus / S&P Platts,"Enterprise only, typically very expensive","The actual underlying assessments (Platts CFR India, Turkey HMS 80:20) that LME settles against.","Gold standard, but almost certainly overkill/overpriced for a single yard operation."
+,,,,
+FREE SOURCES ALREADY IN USE (keep using - no need to pay):,,,,
+"  - JPC (jpcsteel.co.in) - free monthly bulletin PDFs, billet/pig iron/sponge iron, official Ministry of Steel body.",,,,
+"  - EEPC (metal.eepcindia.org/view-export/[N]) - free monthly Metal Price Monitor, real Indian billet prices. Use COMPARISON table only, ""Average Prices"" table is stale/buggy.",,,,
+"  - LME.com - free live spot for Steel Scrap CFR India (Platts), Turkey, China HRC. Historical is PAID.",,,,
+"  - Ayron Mart free page (ayronmart.com/semi-finished-steel-prices) - todays ingot/billet with direction, no login.",,,,
+"  - exchangerates.org.uk - full daily USD/INR history by year, free.",,,,
+"  - BigMint free articles - occasionally state real Alang HMS numbers in text (searchable, good for spot-checks).",,,,
+"  - RBI / PIB / DGTR - repo rate, policy, duty notifications, all free.",,,,
+,,,,
+ACCESS TRICKS THAT WORK (found during this project):,,,,
+"  - TRADINGVIEW BLANK CHART: if the chart canvas renders blank in automation, click camera icon -> ""Download image"". This forces a real canvas re-render that can then be read. Worked for SC1!, HC1!, BDI, TIO1!, ACF1!.",,,,
+"  - TRADINGVIEW SYMBOL SEARCH: search by PRODUCT NAME not ticker (e.g. ""steel HRC"" finds HC, ""coking coal"" finds ACF). Tickers often fail.",,,,
+"  - EEPC ARCHIVE: sequential URL pattern /view-export/[N] - 32=Sep2025, 31=Aug2025, 30=Jul2025. Decrement N to go back in time.",,,,
+"  - EXCHANGERATES.ORG.UK: one page per year gives full daily history free, no login.",,,,
+  - LME: individual metal pages show todays spot free even though the historical archive is paid.,,,,
+  - GENERAL: sites that block automated fetch (robots.txt) often still allow a logged-in human browser session - Barchart and BigMint both block automation but work manually.,,,,
+,,,,
+"RECOMMENDATION: Buy TradingView Plus + Ayron Mart first (total ~Rs 26,300/yr). Together they fix the daily-data",,,,
+problem AND test the ingot hypothesis. Only consider BigMint after seeing whether those two produce a validated edge.,,,,
+,,,,
+"UPDATE 9 Aug 2026: Barchart pricing confirmed - Plus $9.99/mo (no historical export), Premier $29.95/mo or",,,,
+"$19.95/mo annualized (has full export - this is the tier needed, not Plus).",,,,
+BUT: found GMK Center (gmk.center) publishes Kallanish-sourced weekly Turkey/China/US/Germany/Italy scrap,,,,
+"charts monthly, FREE. This substantially reduces the need to pay for Turkey scrap data specifically.",,,,
+"HONEST VERDICT: subscription is NOT necessary and does NOT guarantee an edge. Real daily USD/INR (free,",,,,
+zero leakage) was tested rigorously and showed NO edge at most horizons - proof that clean data alone,,,,
+"does not create a signal that is not there. A subscription only removes the ""we could not test it"" excuse.",,,,
